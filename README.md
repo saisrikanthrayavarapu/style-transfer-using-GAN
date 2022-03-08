@@ -1,6 +1,11 @@
 # style-transfer-using-GAN
 To build a Generative adversarial model(modified U-Net) which can generate artificial MRI images of different contrast levels from existing MRI scans.
 
+## Data understanding:
+The data used here (`MRI+T1_T2+Dataset.RAR`) containing both T1 and T2 MRI images in RGB format of base size (217 x 181). Given images should be preprocessed for further analysis. 
+
+The T1 and T2 MRI Images included in the dataset are not related in any way since we have an unpaired dataset here. Hence we would be using cycleGAN in this problem
+
 ### weighted T1 dataset
 http://biomedic.doc.ic.ac.uk/brain-development/downloads/IXI/IXI-T1.tar
 ### weighted T2 dataset
